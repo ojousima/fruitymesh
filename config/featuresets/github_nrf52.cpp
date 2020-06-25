@@ -38,6 +38,7 @@
 #include "IoModule.h"
 #include "MeshAccessModule.h"
 #include "GlobalState.h"
+#include "RuuviLogModule.h"
 
 void setBoardConfiguration_github_nrf52(BoardConfiguration* c)
 {
@@ -74,6 +75,7 @@ u32 initializeModules_github_nrf52(bool createModule)
 	size += GS->InitializeModule<EnrollmentModule>(createModule);
 	size += GS->InitializeModule<IoModule>(createModule);
 	size += GS->InitializeModule<MeshAccessModule>(createModule);
+	size += GS->InitializeModule<RuuviLogModule>(createModule);
 	return size;
 }
 

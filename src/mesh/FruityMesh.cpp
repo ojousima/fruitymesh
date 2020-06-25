@@ -220,6 +220,7 @@ void BootFruityMesh()
 //	Logger::getInstance().enableTag("WMMOD");
 //	Logger::getInstance().enableTag("BME");
 //	Logger::getInstance().enableTag("ADVS");
+	Logger::getInstance().enableTag("RILOG");
 #endif
 	
 	//Log the reboot reason to our ram log so that it is automatically queried by the sink

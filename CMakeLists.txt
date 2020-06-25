@@ -188,6 +188,7 @@ if(BUILD_FEATURESETS)
 
   if (${CHIP} STREQUAL "NRF")
     target_compile_definitions_multi("${NATIVE_TARGETS}" "SOFTDEVICE_PRESENT")
+    target_compile_definitions_multi("${NATIVE_TARGETS}" "APPLICATION_DRIVER_CONFIGURED")
   endif (${CHIP} STREQUAL "NRF")
   set_property_multi("${NATIVE_TARGETS}" "CXX_STANDARD" "11")
   set_property_multi("${NATIVE_TARGETS}" "C_STANDARD" "99")
